@@ -1,0 +1,190 @@
+.section-title{
+    color: $netral;
+}
+.konten1{
+    text-align: center;
+    .konten1-item{
+        @media screen and (max-width: 980px) {
+            margin-bottom: 10%;
+            box-sizing: border-box;
+        }
+        @media screen and (max-width: 470px) {
+            margin-bottom: 25%;
+
+        }
+    }
+    .ilustrasi-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img:nth-child(1){
+            box-sizing: border-box;
+            margin-top: -40px;
+            z-index: -1;
+            animation: introduction 6s ease-in-out infinite;
+            @keyframes introduction {
+                0%{
+                    transform: translateY(0);
+                }
+                50%{
+                    transform: translateY(-20px);
+                }
+                100%{
+                    transform: translateY(0);
+                }
+            }
+        }
+        img:nth-child(2){
+            box-sizing: border-box;
+            margin-top: -90px;
+            z-index: -2;
+        }
+        @media screen and (max-width: 980px) {
+            flex-direction: column;
+        }
+    }
+    .konten1-title{
+        color: $netral;
+    }
+    .konten1-text{
+        color: $netral;
+    }
+    .konten1-btn{
+        // background-image: linear-gradient(180deg,#90e8f4,rgba(144,232,244,.1) 92.32%);
+        box-shadow: 0 5px 10px rgba(144,232,244,.1);
+        &:hover{
+            background-color: $primary;
+        }
+    }
+}
+.konten2{
+    .konten2-wrap{
+        justify-content: center;
+    }
+    .konten2-card{
+        @media screen and (max-width: 730px) {
+            margin-bottom: 10%;
+            box-sizing: border-box;
+        }
+    }
+    .konten2-item{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-desc{
+            color: $netral;
+        }
+    }
+    .konten2-btn{
+        &:hover{
+            background-color: $primary;
+        }
+    }
+}
+
+.konten3{
+    @media screen and (max-width: 470px) {
+        margin-bottom: 10%;
+
+    }
+    &-item{
+        padding: 20px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #90e8f4;
+        &-wrap{
+            color: $netral;
+        }
+    }
+
+}
+
+.konten4{
+    box-sizing: border-box;
+    .konten4-left{
+        .konten4-title{
+            color: $netral;
+        }
+        .konten4-sosmed{
+            &-icon{
+                font-size: 24px;
+                padding: 0 10px 0 0;
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+        .konten4-subscribe{
+            box-sizing: border-box;
+            color: $netral;
+            .form-subscribe{
+                box-sizing: border-box;
+                width: 100%;
+                color: $netral;
+                ::placeholder{
+                    color: $netral;
+                }
+                .input-control{
+                    width: 100%;
+                    box-sizing: border-box;
+                    padding: 20px 20px;
+                    border-radius: 30px;
+                    outline: none;
+                    border: 1px solid #75ffff;
+                    color: $netral;
+                    background: none;
+                }
+                .subscribe-btn{
+                    width: 100%;
+                    padding: 20px 10px;
+                    background: linear-gradient(180deg,#76ffff,#1caeae);
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $netral;
+                    &:hover{
+                        box-shadow: 0 5px 10px #011538;
+                    }
+                }
+                @media screen and (max-width: 470px) {
+                    margin-top: 10%;
+        
+                }
+            }
+            @media screen and (max-width: 470px) {
+                margin-bottom: 10%;
+    
+            }
+        }
+    }
+    .konten4-right{
+        box-sizing: border-box;
+        .konten4-title{
+            box-sizing: border-box;
+            color: $netral;
+            @media screen and (max-width: 470px) {
+                margin-bottom: 10%;
+    
+            }
+        }
+        .konten4-card{
+            box-sizing: border-box;
+            padding: 30px;
+            background: linear-gradient(180deg,rgba(117,255,255,.26),rgba(18,46,94,0) 104.1%);
+            border: 1px solid #4a90ac;
+            margin-bottom: 20px;
+            h3{
+                color: #75ffff;
+            }
+            p{
+                color: $netral;
+            }
+            @media screen and (max-width: 470px) {
+                margin-bottom: 10%;
+    
+            }
+        }
+        @media screen and (max-width: 470px) {
+            margin-top: 10%;
+
+        }
+    }
+    
+}
